@@ -72,7 +72,7 @@
       justify-content: flex-start;
   }
 
-  .f-button{
+  .f_button{
       font-family: 'LatoRegular';
       font-size: 1.2rem;
       letter-spacing: 0.35px; 
@@ -88,15 +88,91 @@
       color: #dedede;
   }
 
-  .portfolio-images {
+  .portfolio_images {
       margin-top: 19px;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
   }
 
-  .portfolio-image{
+  .portfolio_image{
       margin: 0 20px 18px 0;
-      /* margin-bottom: 15px; */
       
   }
+
+.about_us {
+    height: 735px;
+    background-color: #f2f2f2;
+    padding: 64px 20px 30px 40px;
+
+}
+.about_us h2 {
+    font-family: 'LatoBlack';
+    font-size: 3rem;
+    font-weight: 900;
+    color: #666d89;
+    letter-spacing: 0.65px;
+    line-height: 1;
+}
+
+.about_us p {
+  width: 100%;
+  margin-top: 20px;
+  font-family: 'LatoLight';
+  font-size: 1.9rem;
+  color: #767e9e;  
+  letter-spacing: -0.2px;    
+  line-height: 1.6;
+}
+
+.person_list{
+    margin-top: 43px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.person{
+    width: 300px;
+    margin-right:20px;
+}
+
+.person_info h3{
+    margin-top: 15px;
+    font-family: 'LatoBlack';
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: #9296a8;
+    letter-spacing: 0.1px;
+    color: #666d89;
+
+
+}
+
+.person_info p{
+    margin-top: 11px;
+    font-family: 'LatoLight';
+    font-size: 1.2rem;    
+    color: #d1d3da;
+    letter-spacing: 0.32px;
+}
+
+a .sotial{
+    border: 1px solid red;
+    width: 20px;
+    height: 20px;
+}
+
+.facebook{
+    background-image: url(assets/facebook.svg); 
+}
+
+.google{
+    background-image: url(assets/google+.svg); 
+}
+
+.twitter{
+    background-image: url(assets/twitter.svg); 
+}
+.linkedin{
+    background-image: url(assets/linkedin.svg); 
+}
