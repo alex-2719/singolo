@@ -1,0 +1,102 @@
+@font-face{
+    font-family: 'LotoBlack';
+    src: url('assets/Lato-Black.ttf')  format('truetype');
+}
+@font-face{
+    font-family: 'LotoLight';
+    src: url('assets/Lato-Light.ttf')  format('truetype');
+}
+
+@font-face{
+    font-family: 'LotoRegular';
+    src: url('assets/Lato-Regular.ttf')  format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    line-height: 1.2;
+  }
+ 
+  html {
+    font-size: 10px;
+  }
+  
+  body {
+    width: 100%;
+  
+  }
+
+  .content {
+    width: 1020px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .h-ident-30{
+    padding: 0 30px;
+  }
+
+  .portfolio {
+      height: 870px;
+      background-color: #2d303a;
+      padding: 64px 20px 30px 40px;
+
+  }
+  .portfolio h2 {
+      font-family: 'LatoBlack';
+      font-size: 3rem;
+      font-weight: 900;
+      color: #666d89;
+      letter-spacing: 0.65px;
+      line-height: 1;
+  }
+
+  .portfolio p {
+    width: 100%;
+    margin-top: 22px;
+    font-family: 'LatoLight';
+    font-size: 1.9rem;
+    color: #666d89;  
+    letter-spacing: -0.2px;    
+    line-height: 1.7;
+  }
+
+  .filter {
+      margin-top: 6px;
+      display: flex;
+      justify-content: flex-start;
+  }
+
+  .f-button{
+      font-family: 'LatoRegular';
+      font-size: 1.2rem;
+      letter-spacing: 0.35px; 
+      color: #767e9e;
+      border: 2px solid #666d89;
+      border-radius: 5px;
+      padding: 3px 5px;
+      margin-right: 10px;
+  }
+
+  .filter .active {
+      border-color: #dedede;
+      color: #dedede;
+  }
+
+  .portfolio-images {
+      margin-top: 19px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  }
+
+  .portfolio-image{
+      margin: 0 20px 18px 0;
+      /* margin-bottom: 15px; */
+      
+  }
