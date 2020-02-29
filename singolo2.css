@@ -1,197 +1,200 @@
 @font-face{
-    font-family: 'LotoBlack';
-    src: url('assets/Lato-Black.ttf')  format('truetype');
+  font-family: 'Loto';
+  src: url('assets/fonts/Lato-Black.ttf')  format('truetype');
 }
 @font-face{
-    font-family: 'LotoLight';
-    src: url('assets/Lato-Light.ttf')  format('truetype');
+  font-family: 'Loto';
+  src: url('assets/fonts/Lato-Light.ttf')  format('truetype');
 }
 
 @font-face{
-    font-family: 'LotoRegular';
-    src: url('assets/Lato-Regular.ttf')  format('truetype');
+  font-family: 'Loto';
+  src: url('assets/fonts/Lato-Regular.ttf')  format('truetype');
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
-    list-style: none;
-    text-decoration: none;
-    line-height: 1.2;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  list-style: none;
+  text-decoration: none;
+  line-height: 1.2;
   }
  
   html {
-    font-size: 10px;
+  font-size: 10px;
   }
   
   body {
-    width: 100%;
+  width: 100%;
   
   }
 
   .content {
-    width: 1020px;
-    margin: 0 auto;
-    position: relative;
+  width: 1020px;
+  margin: 0 auto;
+  position: relative;
   }
   
   .h-ident-30{
-    padding: 0 30px;
+  padding: 0 30px;
   }
 
   .portfolio {
-      height: 870px;
-      background-color: #2d303a;
-      padding: 64px 20px 30px 40px;
-      box-shadow: 0 6px #323746;
+    height: 870px;
+    background-color: #2d303a;
+    padding: 64px 20px 30px 40px;
+    box-shadow: 0 6px #323746;
 
   }
   .portfolio h2 {
-      font-family: 'LatoBlack';
-      font-size: 3rem;
-      font-weight: 900;
-      color: #666d89;
-      letter-spacing: 0.65px;
-      line-height: 1;
-  }
-
-  .portfolio p {
-    width: 100%;
-    margin-top: 22px;
-    font-family: 'LatoLight';
-    font-size: 1.9rem;
-    color: #666d89;  
-    letter-spacing: -0.2px;    
-    line-height: 1.7;
-  }
-
-  .filter {
-      margin-top: 6px;
-      display: flex;
-      justify-content: flex-start;
-  }
-
-  .f_button{
-      font-family: 'LatoRegular';
-      font-size: 1.2rem;
-      letter-spacing: 0.35px; 
-      color: #767e9e;
-      border: 2px solid #666d89;
-      border-radius: 5px;
-      padding: 3px 5px;
-      margin-right: 10px;
-  }
-
-  .f_button:hover {
-      cursor: pointer;
-      color: #dedede;
-      border-color: #dedede;
-  }
-
-  .filter .active {
-      border-color: #dedede;
-      color: #dedede;
-  }
-
-  .portfolio_images {
-      height: 610px;
-      margin-top: 19px;
-      overflow: hidden;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-  }
-
-  .portfolio_image{
-      margin: 0 20px 18px 0;
-      
-  }
-  .portfolio_image:hover{
-      transform: scale(1.07);
-  }
-
-.about_us {
-    height: 735px;
-    background-color: #f2f2f2;
-    padding: 64px 20px 30px 40px;
-    box-shadow: 0 6px #ffffff;
-
-}
-.about_us h2 {
-    font-family: 'LatoBlack';
+    font-family: 'Lato';
     font-size: 3rem;
     font-weight: 900;
     color: #666d89;
-    letter-spacing: 0.65px;
+    letter-spacing: 0.15px;
     line-height: 1;
+  }
+
+  .portfolio p {
+  width: 100%;
+  margin-top: 22px;
+  font-family: 'Lato';
+  font-size: 1.7rem;
+  color: #666d89;  
+  letter-spacing: 0.18px;    
+  line-height: 1.7;
+  }
+
+  .filter {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .f_button{
+    font-family: 'Lato';
+    font-size: 1.2rem;
+    letter-spacing: 0.1px; 
+    line-height: 0.9;
+    color: #767e9e;
+    border: 2px solid #666d89;
+    border-radius: 5px;
+    padding: 5px 5.1px;
+    margin-right: 9px;
+  }
+
+  .f_button:hover {
+    cursor: pointer;
+    color: #dedede;
+    border-color: #dedede;
+  }
+
+  .filter .active {
+    border-color: #dedede;
+    color: #dedede;
+  }
+
+  .portfolio_images {
+    height: 610px;
+    margin-top: 19px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .portfolio_image{
+    margin: 0 20px 18px 0;
+    
+  }
+  .portfolio_image:hover{
+    transform: scale(1.07);
+  }
+
+.about_us {
+  height: 735px;
+  background-color: #f2f2f2;
+  padding: 63px 20px 30px 40px;
+  box-shadow: 0 6px #ffffff;
+
+}
+.about_us h2 {
+  font-family: 'Lato';
+  font-size: 3rem;
+  font-weight: 900;
+  color: #666d89;
+  letter-spacing: -0.1px;
+  line-height: 1;
 }
 
 .about_us p {
   width: 100%;
   margin-top: 20px;
-  font-family: 'LatoLight';
-  font-size: 1.9rem;
+  font-family: 'Lato';
+  font-size: 1.8rem;
+  font-weight: 300;
   color: #767e9e;  
-  letter-spacing: -0.2px;    
-  line-height: 1.6;
+  letter-spacing: 0.15px;    
+  line-height: 1.7;
 }
 
 .person_list{
-    margin-top: 43px;
-    display: flex;
-    justify-content: flex-start;
+  margin-top: 45px;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .person{
-    width: 300px;
-    margin-right:20px;
+  width: 300px;
+  margin-right:20px;
 }
 
 .person_info h3{
-    width: 100%;
-    margin-top: 15px;
-    font-family: 'LatoBlack';
-    font-size: 1.8rem;
-    font-weight: 900;
-    letter-spacing: 0.1px;
-    color: #666d89;
-
-    white-space: nowrap;
-    overflow: hidden;
+  width: 100%;
+  margin-top: 14px;
+  font-family: 'Lato';
+  font-size: 1.8rem;
+  font-weight: 900;
+  letter-spacing: -0.1px;
+  color: #666d89;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .person_info p{
-    margin-top: 11px;
-    font-family: 'LatoLight';
-    font-size: 1.2rem;    
-    color: #d1d3da;
-    letter-spacing: 0.32px;
+  margin-top: 10px;
+  font-family: 'Lato';
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-align: justify;    
+  color:#767e9e;
+  letter-spacing: -0.06px;
 }
 
 .person_sotial {
-    margin-top: 25px;
-    margin-left: 1px;
-    display: flex;
+  margin-top: 24px;
+  margin-left: 1px;
+  display: flex;
  }
 .person_sotial a{
-    display: flex;
-    width: 32px;
-    height: 32px;
-    border: 1px solid #6a718c;
-    border-radius: 50%;
-    margin-right: 8.1px;
+  display: flex;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #6a718c;
+  border-radius: 50%;
+  margin-right: 8.1px;
 }
 
 .person_sotial a:hover{
-    cursor: pointer;
-    border: 1px solid #163cd4;
-    background-color: #ec920a;
+  cursor: pointer;
+  border: 1px solid #163cd4;
+  background-color: #ec920a;
 }
 
 .person_sotial .sotial{
-   margin: 8.4px 5px;
+   margin: 8px 4.9px 8.5px 5px;
    width: 100%;
    display: flex;
    background-size: contain;
@@ -199,16 +202,16 @@
 }
 
 .facebook{
-    background: url(assets/facebook.svg) no-repeat center; 
+  background: url(assets/facebook.svg) no-repeat center; 
 }
 
 .google{
-    background: url(assets/google+.svg) no-repeat center; 
+  background: url(assets/google+.svg) no-repeat center; 
 }
 
 .twitter{
-    background: url(assets/twitter.svg) no-repeat center; 
+  background: url(assets/twitter.svg) no-repeat center; 
 }
 .linkedin{
-    background: url(assets/linkedin.svg) no-repeat center; 
+  background: url(assets/linkedin.svg) no-repeat center; 
 }
