@@ -1,21 +1,22 @@
 @font-face{
-  font-family: 'Loto';
+  font-family: 'Lato';
   src: url('assets/fonts/Lato-Black.ttf')  format('truetype');
 }
 @font-face{
-  font-family: 'Loto';
+  font-family: 'Lato';
   src: url('assets/fonts/Lato-Light.ttf')  format('truetype');
 }
 
 @font-face{
-  font-family: 'Loto';
+  font-family: 'Lato';
   src: url('assets/fonts/Lato-Regular.ttf')  format('truetype');
 }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Loto', sans-serif;
+  font-family: 'Lato', sans-serif;
   list-style: none;
   text-decoration: none;
   line-height: 1.2;
@@ -61,6 +62,7 @@ header h1:after{
   content: "*";
   color: #dc655f;
 }
+
 header h1 a:hover{
   color: #dc655f;
 }
@@ -86,7 +88,6 @@ header ul.header_links li{
 
 header ul.header_links li:not(:first-child):before {
   content: "·";
-  /* color: red; */
   color: #494e62;
   margin-left: -16px;
   position: absolute;
@@ -118,9 +119,10 @@ header a.active{
 }
 
 .btn_prev, .btn_next {
-   position: absolute; 
-   top: 280px;
+  position: absolute; 
+  top: 280px;
 }
+
 .btn_prev:hover, 
 .btn_next:hover {
   cursor: pointer;
@@ -159,6 +161,7 @@ header a.active{
   transform: rotateZ(90deg);
   box-shadow: 25px -25px #ce5d56, 10px -10px #ce5d56, 14px -14px #ce5d56, 20px -20px #ce5d56;
 }
+
 .slider_line {
   width: 100%;
   height: 6px;
@@ -216,6 +219,7 @@ header a.active{
 .services:hover{
   cursor: pointer;
 }
+
 .service:hover .service_icon {
   background-color: #918c8b3f;
   border-radius: 50%;
@@ -254,6 +258,7 @@ header a.active{
   height: 6px;
   background-color: #ffffff;
 }
+
 /*portfolio*/
 .portfolio {
   height: 870px;
@@ -271,12 +276,12 @@ header a.active{
 }
 
 .portfolio p {
-width: 100%;
-margin-top: 22px;
-font-size: 1.8rem;
-color: #666d89;  
-letter-spacing: -0.23px;    
-line-height: 1.7;
+  width: 100%;
+  margin-top: 22px;
+  font-size: 1.8rem;
+  color: #666d89;  
+  letter-spacing: -0.23px;    
+  line-height: 1.7;
 }
 
 .filter {
@@ -323,106 +328,321 @@ line-height: 1.7;
 .portfolio_image:hover{
   transform: scale(1.07);
 }
+
 /*about us*/
 .about_us {
-height: 735px;
-background-color: #f2f2f2;
-padding: 60px 20px 30px 40px;
-box-shadow: 0 6px #ffffff;
+  height: 731px;
+  background-color: #f2f2f2;
+  padding: 60px 20px 30px 40px;
+  box-shadow: 0 6px #ffffff;
 
 }
 .about_us h2 {
-font-size: 3rem;
-font-weight: 900;
-color: #666d89;
-letter-spacing: 0.3px;
-line-height: 1;
+  font-size: 3rem;
+  font-weight: 900;
+  color: #666d89;
+  letter-spacing: 0.3px;
+  line-height: 1;
 }
 
 .about_us p {
-width: 100%;
-margin-top: 20px;
-font-size: 1.8rem;
-font-weight: 300;
-color: #767e9e;  
-letter-spacing: -0.075px;    
-line-height: 1.7;
+  width: 100%;
+  margin-top: 20px;
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: #767e9e;  
+  letter-spacing: -0.075px;    
+  line-height: 1.7;
 }
 
 .person_list{
-margin-top: 45px;
-display: flex;
-justify-content: flex-start;
+  margin-top: 45px;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .person{
-width: 300px;
-margin-right:20px;
+  width: 300px;
+  margin-right:20px;
 }
 
 .person_info h3{
-width: 100%;
-margin-top: 14px;
-font-family: 'Lato';
-font-size: 1.8rem;
-font-weight: 900;
-letter-spacing: -0.1px;
-color: #666d89;
-white-space: nowrap;
-overflow: hidden;
+  width: 100%;
+  margin-top: 14px;
+  font-family: 'Lato';
+  font-size: 1.8rem;
+  font-weight: 900;
+  letter-spacing: 0.15px; 
+  color: #666d89;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .person_info p{
-margin-top: 10px;
-font-family: 'Lato';
-font-weight: 400;
-font-size: 1.2rem;
-text-align: justify;    
-color:#767e9e;
-letter-spacing: -0.06px;
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-align: justify;    
+  color:#767e9e;
+  letter-spacing: -0.06px;
 }
 
 .person_sotial {
-margin-top: 24px;
-margin-left: 1px;
-display: flex;
+  margin-top: 25px;
+  display: flex;
 }
 .person_sotial a{
-display: flex;
-width: 32px;
-height: 32px;
-border: 1px solid #6a718c;
-border-radius: 50%;
-margin-right: 8.1px;
+  display: flex;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #6a718c;
+  border-radius: 50%;
+  margin-right: 8.1px;
 }
 
 .person_sotial a:hover{
-cursor: pointer;
-border: 1px solid #163cd4;
-background-color: #ec920a;
+  cursor: pointer;
+  border: 1px solid #163cd4;
+  background-color: #ec920a;
 }
 
 .person_sotial .sotial{
- margin: 8px 4.9px 8.5px 5px;
- width: 100%;
- display: flex;
- background-size: contain;
+  margin: 8px 4.9px 8.5px 5px;
+  width: 100%;
+  display: flex;
+  background-size: contain;
 
 }
 
 .facebook{
-background: url(assets/facebook.svg) no-repeat center; 
+  background: url(assets/facebook.svg) no-repeat center; 
 }
 
 .google{
-background: url(assets/google+.svg) no-repeat center; 
+  background: url(assets/google+.svg) no-repeat center; 
 }
 
 .twitter{
-background: url(assets/twitter.svg) no-repeat center; 
+  background: url(assets/twitter.svg) no-repeat center; 
 }
+
 .linkedin{
-background: url(assets/linkedin.svg) no-repeat center; 
+  background: url(assets/linkedin.svg) no-repeat center; 
+}
+
+/*quote*/
+.quote {
+  height: 655px;
+  background-color: #f06c64;
+  padding: 63px 20px 30px 40px;
+  box-shadow: 0 6px #ea676b;
+}
+
+.quote h2 {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #f0d8d9;
+  letter-spacing: 0.09px;
+  line-height: 1;
+}
+
+.quote p {
+  width: 100%;
+  padding-top: 21px;
+  font-size: 1.8rem;
+  color: #f0d8d9;  
+  letter-spacing: -0.22px;    
+  line-height: 31px;
+  padding-right: 20px;
+  text-align: justify;
+}
+
+.contacts-us {
+  display: inline-flex;
+}
+
+.col-8 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: calc(100% / 12 * 8);
+  padding: 44px 20px 0 0;
+}
+
+.col-8 input {
+  margin-bottom: 15.85px;
+  line-height: 3.185;
+  padding-left: 14.5px;
+}
+
+.col-8 textarea {
+  height: 200px;
+  padding-top: 10.8px;
+  padding-left: 14.5px;
+}
+
+.col-8 input,
+.col-8 textarea {
+  border: none;
+  color: #f48c8f;
+  background-color: #d6564f;
+  border-radius: 5px;
+  border-color: #d6564f;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.col-8 input::placeholder,
+.col-8 textarea::placeholder {
+  color: #f48c8f;
+}
+
+.btn-send{
+  margin-top: 15px;
+  width: 200px;
+}
+
+.btn-send:hover{
+  cursor: pointer;
+  border: 1px solid #ffffff;
+  color:#ffffff;
+  box-shadow: 1px 1px 2px black, 0 0 1em red;
+}
+
+.col-4{
+  display: flex;
+  flex-direction: column;
+  width: calc(100% / 12 * 4);
+   padding: 44px 0px 0 0;  
+}
+
+.contact-info {
+  color:#f0d8d9;
+  text-decoration: none;
+}
+
+.contact-info h3 {
+  font-size: 1.8rem;
+  line-height: 17.86px;
+  font-weight: 900;
+  letter-spacing: 0.2px;
+}
+
+.contact-info p {
+  padding-top: 10px;
+  font-size: 1.2rem;
+  font-weight: 400;  
+  line-height: 21.9px;
+  letter-spacing: -0.12px; 
+  text-align: justify;
+  hyphens: manual;
+  -moz-hyphens: manual;
+  -webkit-hyphens: manual;
+  -ms-hyphens: manual;
+}
+
+.contacts {
+  padding-top: 22px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact {
+  display: flex;
+  margin-bottom: 1.3px; 
+  padding: 0 auto 10px 0;
+  font-size: 1.2rem;
+  font-weight: 400;  
+  line-height: 19px;
+  letter-spacing: 0.09px;
+}
+
+.contact a{
+  margin-top: 2px;
+  text-decoration: none;
+  color: #f0d8d9;
+}
+
+.contact a:last-child{
+  margin-top: 5px;
+}
+
+.contact a:hover{
+  margin-top: 5px;
+  text-shadow: 1px 1px 2px black, 0 0 1em red;
+  text-decoration: underline;
+}
+
+.ico{
+  margin-top: 4px;
+  margin-left: px;
+  display: inline-flex;
+  width: 13px;
+  height: 13px;
+  margin-right: 9px;
+  padding: 2px auto 12px 5px; 
+}
+
+.ico-location{
+  background: url(assets/ico-location.svg) no-repeat center; 
+}
+
+.ico-phone{
+  background: url(assets/ico-phone.svg) no-repeat center; 
+}
+
+.ico-email{
+  background: url(assets/ico-mail.svg) no-repeat center; 
+}
+/*footer*/
+.footer {
+  height: 70px;
+  background-color: #2d303a;
+  box-shadow: 0 6px #2d303a;
+
+}
+
+.footer_info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_info p{
+  padding-top: 26px;
+  padding-left: 12px;
+  font-size: 1.2rem;
+  font-weight: 400;  
+  line-height: 21.55px;
+  letter-spacing: -0.12px;  
+  color:#6a718c; 
+}
+
+.footer_sotial {
+  padding: 0 2px 0 3px;
+  margin-top: 21px;
+  display: flex;
+ }
+
+.footer_sotial a{
+  display: flex;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #6a718c;
+  border-radius: 50%;
+  margin-right: 8.1px;
+}
+
+.footer_sotial a:hover{
+  cursor: pointer;
+  border: 1px solid #163cd4;
+  background-color: #ec920a;
+}
+
+.footer_sotial .sotial{
+  margin: 8px 4.9px 8.5px 5px;
+  width: 100%;
+  display: flex;
+  background-size: contain;
 }
 
 
