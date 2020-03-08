@@ -1,1 +1,1 @@
-# [https://alex-2719.github.io/singolo](singolo)
+# [singolo](https://alex-2719.github.io/singolo)
