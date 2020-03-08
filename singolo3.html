@@ -1,47 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="singolo3.css">
-    <title>Singolo</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="singolo3.css">
+  <title>Singolo</title>
 </head>
 <body>
-    <div class="content">
-        <main>
-            <section class="quote h-ident-30">
-                <h2>Get a Quote</h2>
-                <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-                <div class="contacts-us">
-                    <div class="col-8">
-                        <input type="text" name="name" placeholder="Name (Required)">
-                        <input type="text" name="email" placeholder="Email (Required)">
-                        <input type="text" name="subject" placeholder="Subject">
-                        <textarea name="detail" cols="30" rows="10" placeholder="Describe your project in detail..."></textarea>
-                    </div>
-                    <div class="col-4 contact-info">
-                        <h3>Contact Information</h3>
-                        <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viver-<wbr>ra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. </p>
-                        <div class="contacts">
-                            <span class="contact"><span class="ico ico-location"></span>Elm St. 14/05 Lost City</span>
-                            <span class="contact"><span class="ico ico-phone"></span>03528 331 86 35</span>
-                            <span class="contact"><span class="ico ico-email"></span>info@singolo.com</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main> 
-        <footer class="footer h-ident-30">
-            <div class="footer_info">
-                <p>&copy;&nbsp;Copyright&nbsp;2013</p>
-                <div class="footer_sotial">
-                    <a class=" " href="#"><span class="sotial facebook"></span></a>
-                    <a class=" " href="#"><span class="sotial google"></span></a>
-                    <a class=" " href="#"><span class="sotial twitter"></span></a>
-                    <a class=" " href="#"><span class="sotial linkedin"></span></a>                </div>
+  <div class="content">
+    <main>
+      <section class="quote h-ident-30">
+        <h2>Get a Quote</h2>
+        <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+        <div class="contacts-us">
+          <form class="col-8" method="post" action="#">
+            <input type="text" name="name" placeholder="Name (Required)" minlength="2" required>
+            <input type="email" name="email" placeholder="Email (Required)" required>
+            <input type="text" name="subject" placeholder="Subject">
+            <textarea name="detail" cols="30" rows="10" placeholder="Describe your project in detail..."></textarea>
+            <input class="btn btn-send" type="submit" >
+          </form>
+          <div class="col-4 contact-info">
+            <h3>Contact Information</h3>
+            <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viver-<wbr>ra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. </p>
+            <div class="contacts">
+              <span class="contact"><span class="ico ico-location"></span>Elm St. 14/05 Lost City</span>
+              <span class="contact"><span class="ico ico-phone"></span><a href="tel:035283318635">03528 331 86 35</a></span>
+              <span class="contact"><span class="ico ico-email"></span><a href="mailto:info@singolo.com">info@singolo.com</a></span>
             </div>
-        </footer>
-    </div>
+          </div>
+        </div>
+      </section>
+    </main> 
+    <footer class="footer h-ident-30">
+      <div class="footer_info">
+        <p>&copy;&nbsp;Copyright&nbsp;2013</p>
+        <div class="footer_sotial">
+          <a class=" " href="#"><span class="sotial facebook"></span></a>
+          <a class=" " href="#"><span class="sotial google"></span></a>
+          <a class=" " href="#"><span class="sotial twitter"></span></a>
+          <a class=" " href="#"><span class="sotial linkedin"></span></a>                </div>
+      </div>
+    </footer>
+  </div>
 
 
 </body>
