@@ -700,6 +700,12 @@ header a.active{
 #message .detail {
   font-size: 20px;
   text-align: left;
+  align-self: start;
+  overflow: auto;
+  width: 100%;
+}
+.message-detail{
+  overflow-wrap: break-word;
 }
 
 #message .btn-close{

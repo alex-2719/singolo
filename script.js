@@ -109,7 +109,7 @@ const parseForm = () => {
     const description = document.querySelector('#detail').value;
     
     result += subject ? `<div> <span>Тема:</span>${subject} </div>`:`<div><span></span> Без темы</div>`;
-    result += description ? `<div> <span>Описание:</span>${description} </div>`:`<div><span></span> Без описания</div>`;
+    result += description ? `<div class="message-detail"> <span>Описание:</span>${description} </div>`:`<div><span></span> Без описания</div>`;
     return result;
 }
 
