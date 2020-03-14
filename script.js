@@ -8,10 +8,7 @@ window.onload = function (){
     createPortfolioFilterItemHandler();
     createPortfolioImageItemHandler();
 
-    sendContactForm();
-
-
-}
+    document.querySelector('#contact-form').addEventListener('submit', (event) => sendContactForm(event))};
 
 const createHeaderMenuItemHandler = ()=>{
     document.querySelector("nav .header_links").addEventListener('click', (event)=>{
@@ -26,7 +23,6 @@ const createHeaderMenuItemHandler = ()=>{
 const createSliderButtonHandler = () => {
     const slider_section = document.querySelector('.img-slider');
     slider_section.addEventListener('click',(event) => {
-        console.log(event.target);
         if (event.target.offsetParent.classList.contains('btn_prev') || 
             event.target.offsetParent.classList.contains('btn_next')){
             changeSlide(slider_section);
@@ -61,11 +57,10 @@ const createPortfolioImageItemHandler = ()=>{
     });
 }
 
-const sendContactForm = () => {
-    
+const sendContactForm = (event) => {
+    messageFormShow(parseForm());
+    event.preventDefault();
 }
-
-
 const removeItemActiveClass = (selector,activeClass)=>{
     const items = document.querySelectorAll(selector);
     items.forEach((item)=>{
@@ -83,7 +78,6 @@ const addItemActionClick = (selectedItem,action)=>{
 
 const changeSlide = (slider_section) => {
     let slider = slider_section.querySelector('.slider');
-    console.log(slider);
     slider_section.classList.toggle('blue');
     if (slider.children.length === 2){
         slider.innerHTML = '';
@@ -108,5 +102,28 @@ const movePortfolioImages = ()=>{
 
 
 }
+
+const parseForm = () => {
+    let result = '<h3>Письмо отправлено</h3>'
+    const subject = document.querySelector('#subject').value;
+    const description = document.querySelector('#detail').value;
+    
+    result += subject ? `<div> <span>Тема:</span>${subject} </div>`:`<div><span></span> Без темы</div>`;
+    result += description ? `<div> <span>Описание:</span>${description} </div>`:`<div><span></span> Без описания</div>`;
+    return result;
+}
+
+const messageFormShow = (message) => {
+
+    document.querySelector('#message-form').classList.toggle('hidden');
+    document.querySelector('#message .detail').innerHTML = message;
+    document.querySelector('#message .btn-close').onclick = () => {
+        document.querySelector('#message-form').classList.toggle('hidden');
+        document.querySelector('#message .detail').innerHTML = '';
+        document.querySelector('#contact-form').reset();
+
+    };
+}
+
 
 

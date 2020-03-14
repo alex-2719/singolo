@@ -165,12 +165,12 @@
         <h2>Get a Quote</h2>
         <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
         <div class="contacts-us">
-          <form class="col-8" method="post" action="#">
+          <form id="contact-form" class="col-8" method="post" action="#">
             <input type="text" name="name" placeholder="Name (Required)" minlength="2" required>
             <input type="email" name="email" placeholder="Email (Required)" required>
-            <input type="text" name="subject" placeholder="Subject">
-            <textarea name="detail" cols="30" rows="10" placeholder="Describe your project in detail..."></textarea>
-            <input class="btn btn-send" type="submit" >
+            <input id="subject" type="text" name="subject" placeholder="Subject">
+            <textarea id="detail" name="detail" cols="30" rows="10" placeholder="Describe your project in detail..."></textarea>
+            <input id="submit-btn" class="btn btn-send" type="submit" >
           </form>
           <div class="col-4 contact-info">
             <h3>Contact Information</h3>
@@ -179,6 +179,13 @@
               <span class="contact"><span class="ico ico-location"></span>Elm St. 14/05 Lost City</span>
               <span class="contact"><span class="ico ico-phone"></span><a href="tel:035283318635">03528 331 86 35</a></span>
               <span class="contact"><span class="ico ico-email"></span><a href="mailto:info@singolo.com">info@singolo.com</a></span>
+            </div>
+            <div id="message-form" class="hidden">
+              <div id="message">
+                <div class="detail"></div>
+                <br>
+                <button class="btn-close">close</button>
+              </div>
             </div>
           </div>
         </div>
@@ -195,6 +202,7 @@
       </div>
     </footer>    
   </div>    
+
   <script src="script.js"></script>
 </body>
 </html>
