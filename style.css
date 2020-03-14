@@ -1,15 +1,18 @@
 @font-face{
   font-family: 'Lato';
   src: url('assets/fonts/Lato-Black.ttf')  format('truetype');
+  font-weight: 900;
 }
 @font-face{
   font-family: 'Lato';
   src: url('assets/fonts/Lato-Light.ttf')  format('truetype');
+  font-weight: 600;
 }
 
 @font-face{
   font-family: 'Lato';
   src: url('assets/fonts/Lato-Regular.ttf')  format('truetype');
+  font-weight: 400;
 }
 
 * {
@@ -115,12 +118,18 @@ header a.active{
   height: 594px; 
   background: #f06c64;
   position: relative;
-  
+  box-shadow: 0 6px #ea676b;
+}
+
+.blue{
+  background: #648bf0;
+  box-shadow: 0 6px #5783f3;
 }
 
 .btn_prev, .btn_next {
   position: absolute; 
   top: 280px;
+  z-index: 90;
 }
 
 .btn_prev:hover, 
@@ -141,9 +150,11 @@ header a.active{
   align-items: center;
   justify-content: flex-start;
   padding: 53px 10px 60px;
+  position: relative;
 }
 
-.images {
+.images, 
+.images.vertical{
   display: block;
   background: url(assets/phone_bg1.png) no-repeat;
   background-position: 0 -70px;
@@ -153,7 +164,7 @@ header a.active{
   box-shadow: 25px 25px #ce5d56, 10px 10px #ce5d56, 14px 14px #ce5d56, 20px 20px #ce5d56;
 }
 
-.images:last-child {
+.images.horizontal {
   background: url(assets/phone_bg2.png) no-repeat;
   background-position: -105px -56px;
   margin-top: -3px;
@@ -161,12 +172,13 @@ header a.active{
   transform: rotateZ(90deg);
   box-shadow: 25px -25px #ce5d56, 10px -10px #ce5d56, 14px -14px #ce5d56, 20px -20px #ce5d56;
 }
-
-.slider_line {
-  width: 100%;
-  height: 6px;
-  background-color: #ea676b;
+.image-slider2{
+  margin: 0 auto 0;
 }
+.screen-black{
+  background: #000 !important;
+}
+
 
 /*services*/
 .services{
@@ -263,9 +275,11 @@ header a.active{
 .portfolio {
   height: 870px;
   background-color: #2d303a;
-  padding: 60px 20px 30px 40px;
   box-shadow: 0 6px #323746;
 
+}
+.portfolio__title{
+  padding: 60px 0 0 10px;
 }
 .portfolio h2 {
   font-size: 3rem;
@@ -277,15 +291,17 @@ header a.active{
 
 .portfolio p {
   width: 100%;
-  margin-top: 22px;
+  /* margin-top: 22px; */
   font-size: 1.8rem;
+  padding: 22px 0 0 10px;
   color: #666d89;  
   letter-spacing: -0.23px;    
   line-height: 1.7;
 }
 
 .filter {
-  margin-top: 10px;
+  padding-top: 10px;
+  padding-left:10px;
   display: flex;
   justify-content: flex-start;
 }
@@ -313,16 +329,23 @@ header a.active{
 }
 
 .portfolio_images {
-  height: 610px;
-  margin-top: 19px;
+  height: 620px;
+  padding: 15px 0 15px 0;
   overflow: hidden;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
+  .portfolio_image img.active{
+    border: 5px solid #F06C64;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+  }
 
 .portfolio_image{
-  margin: 0 20px 18px 0;
+  padding-bottom: 20px;
+  /* padding:20px 5px 5px 0; */
+  /* margin: 0 20px 18px 0; */
   
 }
 .portfolio_image:hover{
