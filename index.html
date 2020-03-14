@@ -9,29 +9,31 @@
 <body>
   <div class="content">
     <header class="h-ident-30">
-      <h1><a href="singolo1.html">SINGOLO</a></h1>
+      <h1><a href="index.html">SINGOLO</a></h1>
       <nav>
         <ul class="header_links">
-          <li class="header_link"><a class="active" href="#">home</a></li>
-          <li class="header_link"><a href="#">services</a></li>
-          <li class="header_link"><a href="#">portfolio</a></li>
-          <li class="header_link"><a href="#">about</a></li>
-          <li class="header_link"><a href="#">contact</a></li>
+          <li class="header_link"><a class="link_a active" href="#">home</a></li>
+          <li class="header_link"><a class = "link_a" href="#services">services</a></li>
+          <li class="header_link"><a class = "link_a" href="#portfolio">portfolio</a></li>
+          <li class="header_link"><a class = "link_a" href="#about">about</a></li>
+          <li class="header_link"><a class = "link_a" href="#quote">contact</a></li>
         </ul>
       </nav>
     </header>
     <div class="header_line"></div>
     <main class="">
-      <div class="img-slider h-ident-30">
-        <div class="btn_prev"><img src="assets/btn_prev.png" alt="prev"></div>
+      <div  class="img-slider h-ident-30">
+        <div class="btn_nav btn_prev"><img src="assets/btn_prev.png" alt="prev"></div>
         <div class="slider">
-          <img class="images" src="assets/phone.png" alt="img1" >
-          <img class="images" src="assets/phone.png" alt="img2" >
-        </div>
-        <div class="btn_next"><img src="assets/btn_next.png" alt="next"></div>
+          <img class="images vertical" src="assets/phone.png" alt="img1" >
+          <img class="images horizontal" src="assets/phone.png" alt="img2" >
+          <!-- <img class="image-slider2" src="assets/slider2.svg" alt="image 3"> -->
+        </div>  
+
+        <div class="btn_nav btn_next"><img src="assets/btn_next.png" alt="next"></div>
       </div>
       <div class="slider_line"></div>
-      <section class="services h-ident-30">
+      <section id="services" class="services h-ident-30">
         <h2>Our Services</h2>
         <p class="about_text">
           Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis
@@ -90,8 +92,8 @@
         </ul>
       </section>
       <div class="services_line"></div> 
-      <section class="portfolio h-ident-30">
-        <h2>Portfolio</h2>
+      <section id="portfolio" class="portfolio h-ident-30">
+        <h2 class="portfolio__title">Portfolio</h2>
         <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
         <ul class="filter">
           <li class="f_button active">All</li>
@@ -100,21 +102,21 @@
           <li class="f_button">Artwork</li>
         </ul>
         <div class="portfolio_images">
-          <div class="portfolio_image"><img src="assets/portfolio-1.png" alt="portfolio-1" class="image"></div>
-          <div class="portfolio_image"><img src="assets/portfolio-2.png" alt="portfolio-2" class="image"></div>
-          <div class="portfolio_image"><img src="assets/portfolio-3.png" alt="portfolio-3" class="image"></div>
-          <div class="portfolio_image"><img src="assets/portfolio-4.png" alt="portfolio-4" class="image"></div>
-          <div class="portfolio_image"><img src="assets/portfolio-5.png" alt="portfolio-5" class="image"></div>
-          <div class="portfolio_image"><img src="assets/portfolio-6.png" alt="portfolio-6" class="image"></div>
-          <div class="portfolio_image"><img src="assets/portfolio-7.png" alt="portfolio-7" class="image"></div>
-          <div class="portfolio_image"><img src="assets/portfolio-8.png" alt="portfolio-8" class="image"></div>
-          <div class="portfolio_image"><img src="assets/portfolio-9.png" alt="portfolio-9" class="image"></div>
-          <div class="portfolio_image"><img src="assets/portfolio-10.png" alt="portfolio-10" class="image"></div>
-          <div class="portfolio_image"><img src="assets/portfolio-11.png" alt="portfolio-11" class="image"></div>
-          <div class="portfolio_image"><img src="assets/portfolio-12.png" alt="portfolio-12" class="image"></div>
+          <div class="portfolio_image"><img class="image" src="assets/portfolio-1.png" alt="portfolio-1" class="image"></div>
+          <div class="portfolio_image"><img class="image" src="assets/portfolio-2.png" alt="portfolio-2" class="image"></div>
+          <div class="portfolio_image"><img class="image" src="assets/portfolio-3.png" alt="portfolio-3" class="image"></div>
+          <div class="portfolio_image"><img class="image" src="assets/portfolio-4.png" alt="portfolio-4" class="image"></div>
+          <div class="portfolio_image"><img class="image" src="assets/portfolio-5.png" alt="portfolio-5" class="image"></div>
+          <div class="portfolio_image"><img class="image" src="assets/portfolio-6.png" alt="portfolio-6" class="image"></div>
+          <div class="portfolio_image"><img class="image" src="assets/portfolio-7.png" alt="portfolio-7" class="image"></div>
+          <div class="portfolio_image"><img class="image" src="assets/portfolio-8.png" alt="portfolio-8" class="image"></div>
+          <div class="portfolio_image"><img class="image" src="assets/portfolio-9.png" alt="portfolio-9" class="image"></div>
+          <div class="portfolio_image"><img class="image" src="assets/portfolio-10.png" alt="portfolio-10" class="image"></div>
+          <div class="portfolio_image"><img class="image" src="assets/portfolio-11.png" alt="portfolio-11" class="image"></div>
+          <div class="portfolio_image"><img class="image" src="assets/portfolio-12.png" alt="portfolio-12" class="image"></div>
         </div>
       </section>
-      <section class="about_us h-ident-30">
+      <section id="about" class="about_us h-ident-30">
         <h2>About Us</h2>
         <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
         <div class="person_list">
@@ -159,16 +161,16 @@
           </div>
         </div>
       </section>  
-      <section class="quote h-ident-30">
+      <section id="quote" class="quote h-ident-30">
         <h2>Get a Quote</h2>
         <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
         <div class="contacts-us">
-          <form class="col-8" method="post" action="#">
+          <form id="contact-form" class="col-8" method="post" action="#">
             <input type="text" name="name" placeholder="Name (Required)" minlength="2" required>
             <input type="email" name="email" placeholder="Email (Required)" required>
-            <input type="text" name="subject" placeholder="Subject">
-            <textarea name="detail" cols="30" rows="10" placeholder="Describe your project in detail..."></textarea>
-            <input class="btn btn-send" type="submit" >
+            <input id="subject" type="text" name="subject" placeholder="Subject">
+            <textarea id="detail" name="detail" cols="30" rows="10" placeholder="Describe your project in detail..."></textarea>
+            <input id="submit-btn" class="btn btn-send" type="submit" >
           </form>
           <div class="col-4 contact-info">
             <h3>Contact Information</h3>
@@ -177,6 +179,13 @@
               <span class="contact"><span class="ico ico-location"></span>Elm St. 14/05 Lost City</span>
               <span class="contact"><span class="ico ico-phone"></span><a href="tel:035283318635">03528 331 86 35</a></span>
               <span class="contact"><span class="ico ico-email"></span><a href="mailto:info@singolo.com">info@singolo.com</a></span>
+            </div>
+            <div id="message-form" class="hidden">
+              <div id="message">
+                <div class="detail"></div>
+                <br>
+                <button class="btn-close">close</button>
+              </div>
             </div>
           </div>
         </div>
@@ -193,6 +202,6 @@
       </div>
     </footer>    
   </div>    
-  
+  <script src="script.js"></script>
 </body>
 </html>
